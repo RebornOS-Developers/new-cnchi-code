@@ -188,6 +188,26 @@
        </edition>
     </editions>
 
+        <edition name="UKUI" description="UKUI desktop">
+            <packages>
+                <pkgname>rebornos-cosmic-ukui</pkgname>
+                <pkgname>lightdm</pkgname>
+                <pkgname>lightdm-gtk-greeter</pkgname>
+                <pkgname>rebornos-lightdm-gtk-greeter-images</pkgname>
+                <pkgname>lightdm-gtk-greeter-settings</pkgname>
+            </packages>
+        </edition>
+	
+        <edition name="LXDE" description="LXDE desktop">
+            <packages>
+                <pkgname>rebornos-cosmic-lxde</pkgname>
+                <pkgname>lightdm</pkgname>
+                <pkgname>lightdm-gtk-greeter</pkgname>
+                <pkgname>rebornos-lightdm-gtk-greeter-images</pkgname>
+                <pkgname>lightdm-gtk-greeter-settings</pkgname>
+            </packages>
+        </edition>
+
     <!-- User desired features -->
     <features>
         <feature name="a11y">
