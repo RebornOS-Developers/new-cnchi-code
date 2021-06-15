@@ -438,8 +438,8 @@ postinstall() {
 
     if [[ budgie = "${CN_DESKTOP}" ]]; then
         chroot ${CN_DESTDIR} systemctl -fq enable lightdm.service
-	    # sed -i 's/^webkit_theme\s*=\s*\(.*\)/webkit_theme = lightdm-webkit-theme-aether #\1/g' ${CN_DESTDIR}/etc/lightdm/lightdm-webkit2-greeter.conf
-	    # sed -i 's/^\(#?greeter\)-session\s*=\s*\(.*\)/greeter-session = lightdm-webkit2-greeter #\1/ #\2g' ${CN_DESTDIR}/etc/lightdm/lightdm.conf
+	# sed -i 's/^webkit_theme\s*=\s*\(.*\)/webkit_theme = lightdm-webkit-theme-aether #\1/g' ${CN_DESTDIR}/etc/lightdm/lightdm-webkit2-greeter.conf
+	# sed -i 's/^\(#?greeter\)-session\s*=\s*\(.*\)/greeter-session = lightdm-webkit2-greeter #\1/ #\2g' ${CN_DESTDIR}/etc/lightdm/lightdm.conf
         cp /usr/share/cnchi/flatpak.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon2.sh ${CN_DESTDIR}/usr/bin/
