@@ -115,7 +115,7 @@ SESSIONS = {
     'i3': 'i3',
     'lxqt': 'lxsession',
     'windows': 'windows',
-    'ukui': 'ukui',
+    'ukui': 'ukui-session',
     'lxde': 'LXDE'
 }
 
