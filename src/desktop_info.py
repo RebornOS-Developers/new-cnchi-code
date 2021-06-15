@@ -145,9 +145,7 @@ DESCRIPTIONS = {
                   "While true Pantheon is too unstable for RebornOS to offer, we "
                   "have tried to offer the next best thing. By selecting Pantheon, "
                   "you will get Elementary OS's good looks on a highly customized desktop "
-                  "running Cinnamon underneath. Through this, you will be able to run "
-                  "the majority of Elementary OS's applications and experience their "
-                  "stunning style and theming - all in a stable system."), 
+                  "running Cinnamon underneath."), 
     'gnome': _("GNOME 3 is an easy and elegant way to use your "
                "computer. It features the Activities Overview which "
                "is an easy way to access all your basic tasks."),
