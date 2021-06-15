@@ -203,10 +203,7 @@ DESCRIPTIONS = {
     'lxde': _("LXDE, which stands for Lightweight X11 Desktop Environment, is a desktop "
               "environment which is lightweight and fast. It is designed to be user friendly "
               "and slim, while keeping the resource usage low. LXDE uses less RAM and less "
-              "CPU while being a feature rich desktop environment. Unlike other tightly "
-              "integrated desktops LXDE strives to be modular, so each component can be used "
-              "independently with few dependencies. This makes porting LXDE to different "
-              "distributions and platforms easier.")
+              "CPU while being a feature rich desktop environment.")
 }
 
 # Delete previous _() dummy declaration
