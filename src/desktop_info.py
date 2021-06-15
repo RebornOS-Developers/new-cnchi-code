@@ -3,7 +3,7 @@
 #
 #  desktop_info.py
 #
-#  Copyright © 2013-2019 RebornOS
+#  Copyright © 2013-2019 RebornOS - Modified by Rafael <rafael@rebornos.org> in 2020/2021
 #
 #  This file is part of Cnchi.
 #
@@ -30,12 +30,12 @@
 """ Desktop Environments information """
 
 # Disabled desktops(in DESKTOPS_DEV = DESKTOPS : "enlightenment", "windows", "apricity"
-# Enabled desktops
+# Enabled desktops (added ukui and lxde in 2021.06.15)
 
 DESKTOPS = ["base", "cinnamon", "deepin",
             "gnome", "kde", "mate", "openbox", "xfce"]
 
-DESKTOPS_DEV = DESKTOPS + ["budgie", "i3", "lxqt", "pantheon"]
+DESKTOPS_DEV = DESKTOPS + ["budgie", "i3", "lxqt", "pantheon", "ukui", "lxde"]
 
 DESKTOPS_A11Y = ["gnome", "mate", "apricity"]
 
@@ -57,7 +57,7 @@ NAMES = {
     'cinnamon': "Cinnamon",
     'deepin': "Deepin",
     'pantheon': "Pantheon",
-   'windows':"Windows Interface",
+    'windows':"Windows Interface",
     'gnome': "GNOME",
     'kde': "KDE",
     'mate': "MATE",
@@ -67,10 +67,12 @@ NAMES = {
     'enlightenment': "Enlightenment",
     'i3': "i3",
     'lxqt': "LXQt",
+    'ukui': "UKUI",
+    'lxde': "LXDE",
 }
 
 LIBS = {
-    'gtk': ["apricity", "cinnamon", "deepin", "pantheon", "gnome", "mate", "openbox", "xfce", "budgie", "enlightenment", "i3", "windows"],
+    'gtk': ["apricity", "cinnamon", "deepin", "pantheon", "gnome", "mate", "openbox", "xfce", "budgie", "enlightenment", "i3", "windows", "ukui", "lxde"],
     'qt': ["kde", "lxqt"]
 }
 
@@ -83,7 +85,7 @@ EXCLUDED_FEATURES = {
     'cinnamon': ["lamp", "visual", "nemo", "qt-play"],
     'deepin': ["lamp", "visual", "qt-play"],
     'pantheon': ["lamp", "visual", "qt-play", "nemo"],
-   'windows': ["lamp", "visual", "qt-play", "nemo"],
+    'windows': ["lamp", "visual", "qt-play", "nemo"],
     'gnome': ["lamp", "visual", "nautilus", "qt-play"],
     'kde': ["lamp", "visual", "gtk-play"],
     'mate': ["lamp", "visual", "qt-play"],
@@ -93,6 +95,8 @@ EXCLUDED_FEATURES = {
     'enlightenment': ["lamp", "visual", "qt-play"],
     'i3': ["lamp", "qt-play"],
     'lxqt': ["lamp", "visual", "gtk-play"]
+    'ukui': ["lamp", "visual", "gtk-play"]
+    'lxde': ["lamp", "visual", "gtk-play"]
 }
 
 # Session names for lightDM setup (/usr/share/xsessions)
@@ -110,7 +114,9 @@ SESSIONS = {
     'enlightenment': 'enlightenment',
     'i3': 'i3',
     'lxqt': 'lxsession',
-   'windows': 'windows'
+    'windows': 'windows'
+    'ukui': 'ukui'
+    'lxde': 'LXDE'
 }
 
 
@@ -189,7 +195,20 @@ DESCRIPTIONS = {
                            "is a Windows-like desktop running Cinnamon underneath, made to look "
                            "and act like the Windows 10 you are already familiar with. Made with Linux "
                           "newbies specifically in mind, this option should hopefully ensure you have "
-                          "an easy, hassle free transition to Linux.")
+                          "an easy, hassle free transition to Linux."),
+            
+    'ukui': _("UKUI is simple and intuitive interface adapted to the habit of users. "
+              "Files category speed up file search. Favorite apps shortcut makes starting "
+              "up application more convenient. User management makes a more concise and "
+              "friendly interaction for system."),
+    
+    'lxde': _("LXDE, which stands for Lightweight X11 Desktop Environment, is a desktop "
+              "environment which is lightweight and fast. It is designed to be user friendly "
+              "and slim, while keeping the resource usage low. LXDE uses less RAM and less "
+              "CPU while being a feature rich desktop environment. Unlike other tightly "
+              "integrated desktops LXDE strives to be modular, so each component can be used "
+              "independently with few dependencies. This makes porting LXDE to different "
+              "distributions and platforms easier.")
 }
 
 # Delete previous _() dummy declaration
