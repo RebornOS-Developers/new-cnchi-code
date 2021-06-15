@@ -94,8 +94,8 @@ EXCLUDED_FEATURES = {
     'budgie': ["lamp", "visual", "qt-play"],
     'enlightenment': ["lamp", "visual", "qt-play"],
     'i3': ["lamp", "qt-play"],
-    'lxqt': ["lamp", "visual", "gtk-play"]
-    'ukui': ["lamp", "visual", "gtk-play"]
+    'lxqt': ["lamp", "visual", "gtk-play"],
+    'ukui': ["lamp", "visual", "gtk-play"],
     'lxde': ["lamp", "visual", "gtk-play"]
 }
 
@@ -114,8 +114,8 @@ SESSIONS = {
     'enlightenment': 'enlightenment',
     'i3': 'i3',
     'lxqt': 'lxsession',
-    'windows': 'windows'
-    'ukui': 'ukui'
+    'windows': 'windows',
+    'ukui': 'ukui',
     'lxde': 'LXDE'
 }
 
