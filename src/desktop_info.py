@@ -116,7 +116,7 @@ SESSIONS = {
     'lxqt': 'lxsession',
     'windows': 'windows',
     'ukui': 'ukui-session',
-    'lxde': 'LXDE'
+    'lxde': 'startlxde'
 }
 
 
