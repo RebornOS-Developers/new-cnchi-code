@@ -188,7 +188,7 @@
        </edition>
     </editions>
 
-        <edition name="UKUI" description="UKUI desktop">
+        <edition name="ukui" description="UKUI desktop">
             <packages>
                 <pkgname>rebornos-cosmic-ukui</pkgname>
                 <pkgname>lightdm</pkgname>
