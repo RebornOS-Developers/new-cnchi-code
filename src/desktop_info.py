@@ -67,8 +67,8 @@ NAMES = {
     'enlightenment': "Enlightenment",
     'i3': "i3",
     'lxqt': "LXQt",
-    'ukui': "UKUI",
-    'lxde': "LXDE",
+    'ukui': "UKUI Desktop",
+    'lxde': "LXDE Desktop",
 }
 
 LIBS = {
