@@ -29,7 +29,7 @@
 
 """ Set some Cnchi global constants """
 
-CNCHI_VERSION = "RebornOS Installer Gnome based 2021.06.15"
+CNCHI_VERSION = "RebornOS Installer Gnome based 2021.06.16"
 CNCHI_WEBSITE = "https://rebornos.org"
 CNCHI_RELEASE_STAGE = "production"
 
