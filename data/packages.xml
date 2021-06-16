@@ -206,6 +206,7 @@
                 <pkgname>lightdm-gtk-greeter-settings</pkgname>
             </packages>
         </edition>
+    </editions>
 
     <!-- User desired features -->
     <features>
