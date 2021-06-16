@@ -33,9 +33,9 @@
 # Enabled desktops (added ukui and lxde in 2021.06.15)
 
 DESKTOPS = ["base", "cinnamon", "deepin",
-            "gnome", "kde", "mate", "openbox", "xfce"]
+            "gnome", "kde", "mate", "openbox", "xfce", "ukui"]
 
-DESKTOPS_DEV = DESKTOPS + ["budgie", "i3", "lxqt", "pantheon", "ukui", "lxde"]
+DESKTOPS_DEV = DESKTOPS + ["budgie", "i3", "lxqt", "pantheon", "lxde"]
 
 DESKTOPS_A11Y = ["gnome", "mate", "apricity"]
 
