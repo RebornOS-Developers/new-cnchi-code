@@ -33,9 +33,9 @@
 # Enabled desktops (added ukui and lxde in 2021.06.15)
 
 DESKTOPS = ["base", "cinnamon", "deepin",
-            "gnome", "kde", "mate", "openbox", "xfce", "ukui"]
+            "gnome", "kde", "mate", "openbox", "xfce"]
 
-DESKTOPS_DEV = DESKTOPS + ["budgie", "i3", "lxqt", "pantheon", "lxde"]
+DESKTOPS_DEV = DESKTOPS + ["budgie", "i3", "lxqt", "pantheon", "ukui", "lxde"]
 
 DESKTOPS_A11Y = ["gnome", "mate", "apricity"]
 
@@ -72,8 +72,8 @@ NAMES = {
 }
 
 LIBS = {
-    'gtk': ["apricity", "cinnamon", "deepin", "pantheon", "gnome", "mate", "openbox", "xfce", "budgie", "enlightenment", "i3", "windows", "ukui", "lxde"],
-    'qt': ["kde", "lxqt"]
+    'gtk': ["apricity", "cinnamon", "deepin", "pantheon", "gnome", "mate", "openbox", "xfce", "budgie", "enlightenment", "i3", "windows", "lxde"],
+    'qt': ["kde", "lxqt", "ukui"]
 }
 
 ALL_FEATURES = ["a11y", "aur", "bluetooth", "broadcom", "maintenance", "cups", "chromium", "email", "dropbox", "firefox", "firefox-developer-edition", "google-chrome", "rtl8821ce-dkms-git", "megasync", "firewire", "opera", "hardinfo", "hunspell", "vivaldi", "games", "graphics", "gtk-play", "hardinfo", "qt-play", "movie", "graphic_drivers", "lamp", "lts", "freeoffice", "wps-office", "libreoffice", "redshift", "power", "sshd", "spotify", "visual", "vlc", "nautilus", "nemo", "qownnotes", "wallpapers", "wine"]
