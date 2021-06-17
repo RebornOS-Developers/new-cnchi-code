@@ -108,7 +108,7 @@ SESSIONS = {
     'gnome': 'gnome',
     'kde': 'plasma',
     'mate': 'mate',
-    'openbox': 'openbox',
+    'openbox': 'openbox-session',
     'xfce': 'xfce',
     'budgie': 'budgie-desktop',
     'enlightenment': 'enlightenment',
