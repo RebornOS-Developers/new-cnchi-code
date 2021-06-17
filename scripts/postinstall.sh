@@ -730,7 +730,11 @@ fi
         chmod 644 ${CN_DESTDIR}/etc/lightdm/lightdm.conf
         rm ${CN_DESTDIR}/etc/lightdm/lightdm-gtk-greeter.conf
         cp /usr/share/cnchi/lightdm-gtk-greeter.conf ${CN_DESTDIR}/etc/lightdm/
-        chmod 644 ${CN_DESTDIR}/etc/lightdm/lightdm-gtk-greeter.conf        
+        chmod 644 ${CN_DESTDIR}/etc/lightdm/lightdm-gtk-greeter.conf
+        rm ${CN_DESTDIR}/home/${CN_USER_NAME}/.config/dconf/user
+        mkdir -p ${CN_DESTDIR}/home/${CN_USER_NAME}/.config/dconf
+        cp /usr/share/cnchi/scripts/postinstall/ukui/config/dconf/* ${CN_DESTDIR}/home/${CN_USER_NAME}/.config/dconf
+        chmod 644 ${CN_DESTDIR}/home/${CN_USER_NAME}/.config/dconf/user
     fi
 
     if [[ lxde = "${CN_DESKTOP}" ]]; then
