@@ -601,6 +601,9 @@ postinstall() {
         cp -r /usr/share/cnchi/scripts/postinstall/openbox/config/openbox/* ${CN_DESTDIR}/home/${CN_USER_NAME}/.config/openbox/
         cp -r /usr/share/cnchi/scripts/postinstall/openbox/config/pcmanfm/* ${CN_DESTDIR}/home/${CN_USER_NAME}/.config/pcmanfm/
         cp -r /usr/share/cnchi/scripts/postinstall/openbox/config/tint2/* ${CN_DESTDIR}/home/${CN_USER_NAME}/.config/tint2/
+	rm ${CN_DESTDIR}/home/${CN_USER_NAME}/.dmrc
+	cp /usr/share/cnchi/scripts/postinstall/openbox/dmrc ${CN_DESTDIR}/home/${CN_USER_NAME}/.dmrc
+	chmod 644 ${CN_DESTDIR}/home/${CN_USER_NAME}/.dmrc
         find ${CN_DESTDIR}/home/${CN_USER_NAME}/.config -type f -exec chmod 644 {} \;
         find ${CN_DESTDIR}/home/${CN_USER_NAME}/.config -type d -exec chmod 755 {} \;
     fi
