@@ -559,18 +559,8 @@ postinstall() {
 
     
     if [[ openbox = "${CN_DESKTOP}" ]]; then
-        # Delete lxdm access (two lines down):
-        # chmod go=rx ${CN_DESTDIR}/var/lib/lightdm-data
-        # chroot ${CN_DESTDIR} systemctl -fq enable lxdm
-	#
-	# Add lightdm:
-	chroot ${CN_DESTDIR} systemctl -fq enable lightdm.service
-	rm ${CN_DESTDIR}/etc/lightdm/lightdm.conf
-        cp /usr/share/cnchi/lightdm.conf ${CN_DESTDIR}/etc/lightdm/
-        chmod 644 ${CN_DESTDIR}/etc/lightdm/lightdm.conf
-        rm ${CN_DESTDIR}/etc/lightdm/lightdm-gtk-greeter.conf
-        cp /usr/share/cnchi/lightdm-gtk-greeter.conf ${CN_DESTDIR}/etc/lightdm/
-        chmod 644 ${CN_DESTDIR}/etc/lightdm/lightdm-gtk-greeter.conf
+        chmod go=rx ${CN_DESTDIR}/var/lib/lightdm-data
+        chroot ${CN_DESTDIR} systemctl -fq enable lxdm
         # cp /usr/share/cnchi/flatpak.sh ${CN_DESTDIR}/usr/bin/
         # cp /usr/share/cnchi/pkcon.sh ${CN_DESTDIR}/usr/bin/
         # cp /usr/share/cnchi/pkcon2.sh ${CN_DESTDIR}/usr/bin/
@@ -601,13 +591,8 @@ postinstall() {
         cp -r /usr/share/cnchi/scripts/postinstall/openbox/config/openbox/* ${CN_DESTDIR}/home/${CN_USER_NAME}/.config/openbox/
         cp -r /usr/share/cnchi/scripts/postinstall/openbox/config/pcmanfm/* ${CN_DESTDIR}/home/${CN_USER_NAME}/.config/pcmanfm/
         cp -r /usr/share/cnchi/scripts/postinstall/openbox/config/tint2/* ${CN_DESTDIR}/home/${CN_USER_NAME}/.config/tint2/
-	rm ${CN_DESTDIR}/home/${CN_USER_NAME}/.dmrc
-	cp /usr/share/cnchi/scripts/postinstall/openbox/dmrc ${CN_DESTDIR}/home/${CN_USER_NAME}/.dmrc
-	chmod 644 ${CN_DESTDIR}/home/${CN_USER_NAME}/.dmrc
         find ${CN_DESTDIR}/home/${CN_USER_NAME}/.config -type f -exec chmod 644 {} \;
         find ${CN_DESTDIR}/home/${CN_USER_NAME}/.config -type d -exec chmod 755 {} \;
-	# Delete access to LXDE Desktop
-	rm /usr/share/xsessions/LXDE.desktop
     fi
 
     if [[ mate = "${CN_DESKTOP}" ]]; then
