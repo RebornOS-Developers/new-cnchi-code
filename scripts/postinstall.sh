@@ -606,6 +606,8 @@ postinstall() {
 	chmod 644 ${CN_DESTDIR}/home/${CN_USER_NAME}/.dmrc
         find ${CN_DESTDIR}/home/${CN_USER_NAME}/.config -type f -exec chmod 644 {} \;
         find ${CN_DESTDIR}/home/${CN_USER_NAME}/.config -type d -exec chmod 755 {} \;
+	# Delete access to LXDE Desktop
+	rm /usr/share/xsessions/LXDE.desktop
     fi
 
     if [[ mate = "${CN_DESKTOP}" ]]; then
