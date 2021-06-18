@@ -431,8 +431,8 @@ postinstall() {
         chmod 644 ${CN_DESTDIR}/etc/lightdm/lightdm-gtk-greeter.conf        
         # Changing default sddm screen to Breeze
         mkdir -p ${CN_DESTDIR}/etc/sddm.conf.d/
-        # rm ${CN_DESTDIR}/etc/sddm.conf.d/kde_settings.conf
-        cp /usr/share/cnchi/kde_settings.conf ${CN_DESTDIR}/etc/sddm.conf.d/
+        rm ${CN_DESTDIR}/etc/sddm.conf.d/kde_settings.conf
+        cp /usr/share/cnchi/scripts/postinstall/kde/etc/sddm.conf.d/kde_settings.conf ${CN_DESTDIR}/etc/sddm.conf.d/
         chroot ${CN_DESTDIR} chmod 644 /etc/sddm.conf.d/kde_settings.conf
     fi
 
