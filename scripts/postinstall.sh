@@ -289,7 +289,8 @@ postinstall() {
     # Copy pacman.conf file over
     rm ${CN_DESTDIR}/etc/pacman.conf
     cp /usr/share/cnchi/pacman.conf ${CN_DESTDIR}/etc/
-    cp /etc/pacman.d/reborn-mirrorlist ${CN_DESTDIR}/etc/pacman.d/
+    # Copy of reborn-mirrorlist removed (Added by rebornos-cosmic-common)
+    # cp /etc/pacman.d/reborn-mirrorlist ${CN_DESTDIR}/etc/pacman.d/
 
     # pamac default configuration file
     rm ${CN_DESTDIR}/etc/pamac.conf
