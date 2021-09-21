@@ -6,7 +6,7 @@ gtk-theme='Adwaita'
 icon-theme='Papirus'
 
 [org.gnome.shell.extensions.user-theme]
-name='Default'
+name=''
 
 [org.gnome.desktop.peripherals.touchpad]
 natural-scroll=true
