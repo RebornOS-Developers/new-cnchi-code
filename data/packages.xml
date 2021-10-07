@@ -207,6 +207,27 @@
                 <pkgname>lightdm-gtk-greeter-settings</pkgname>
             </packages>
         </edition>
+
+        <edition name="Cutefish" description="Cutefish desktop">
+            <packages>
+                <pkgname>rebornos-cosmic-cutefish</pkgname>
+                <pkgname>lightdm</pkgname>
+                <pkgname>lightdm-gtk-greeter</pkgname>
+                <pkgname>rebornos-lightdm-gtk-greeter-images</pkgname>
+                <pkgname>lightdm-gtk-greeter-settings</pkgname>
+            </packages>
+        </edition>
+
+        <edition name="Regolith" description="Regolith desktop">
+            <packages>
+                <pkgname>rebornos-cosmic-regolith</pkgname>
+                <pkgname>lightdm</pkgname>
+                <pkgname>lightdm-gtk-greeter</pkgname>
+                <pkgname>rebornos-lightdm-gtk-greeter-images</pkgname>
+                <pkgname>lightdm-gtk-greeter-settings</pkgname>
+            </packages>
+        </edition>
+
     </editions>
 
     <!-- User desired features -->
