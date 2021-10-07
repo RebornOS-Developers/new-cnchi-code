@@ -57,7 +57,7 @@ ICON_NAMES = {
     'qt-play': 'applications-games',
     'maintenance': 'baobab',
     'movie': 'media-video',
-    'graphic_drivers': 'gnome-system',
+#    'graphic_drivers': 'gnome-system',
     'lamp': 'applications-internet',
     'lts': 'applications-accessories',
     'nemo': 'system-file-manager',
@@ -84,7 +84,7 @@ ICON_NAMES = {
 ADVANCED = [ 'lamp', 'sshd', 'visual', 'firewire', 'broadcom', 'nautilus', 'nemo', 'email', 'wallpapers', 'hunspell' ]
 
 # These features are considered 'basic', and will be shown by default
-BASIC = ['opera', 'wine', 'wallpapers', 'vlc', 'vivaldi', 'visual', 'spotify', 'redshift', 'power', 'libreoffice', 'wps-office', 'freeoffice', 'qownnotes', 'lts', 'graphic_drivers', 'movie', 'maintenance', 'qt-play', 'hardinfo', 'gtk-play', 'graphics', 'games', 'fonts', 'firefox', 'firefox-developer-edition', 'google-chrome', 'email', 'dropbox', 'chromium', 'cups', 'bluetooth', 'aur', 'a11y'
+BASIC = ['opera', 'wine', 'wallpapers', 'vlc', 'vivaldi', 'visual', 'spotify', 'redshift', 'power', 'libreoffice', 'wps-office', 'freeoffice', 'qownnotes', 'lts', 'movie', 'maintenance', 'qt-play', 'hardinfo', 'gtk-play', 'graphics', 'games', 'fonts', 'firefox', 'firefox-developer-edition', 'google-chrome', 'email', 'dropbox', 'chromium', 'cups', 'bluetooth', 'aur', 'a11y'
 'rtl8821ce-dkms-git', 'megasync']
 
 # See http://docs.python.org/2/library/gettext.html "22.1.3.4. Deferred translations"
@@ -111,7 +111,7 @@ TITLES = {
     'fonts': _("Extra Truetype Fonts"),
     'firewire': _("Support For Firewire Devices"),
     'games': _("Steam + PlayonLinux"),
-    'graphic_drivers': _("Graphic drivers (Proprietary)"),
+#    'graphic_drivers': _("Graphic drivers (Proprietary)"),
     'gtk-play': _("Popular Games for Linux"),
     'qt-play': _("Popular Games for Linux"),
     'hardinfo': _("Hardware Analysis"),
@@ -156,7 +156,7 @@ DESCRIPTIONS = {
     'fonts': _("TrueType fonts from the Google Fonts project."),
     'firewire': _("Linux Support For Firewire Devices"),
     'games': _("Installs Steam and Playonlinux for gaming enthusiasts."),
-    'graphic_drivers': _("Installs AMD or Nvidia proprietary graphic driver."),
+#    'graphic_drivers': _("Installs AMD or Nvidia proprietary graphic driver."),
     'gtk-play': _("Popular games for Linux, all created for use on your Desktop Environment"),
     'hunspell': _("Spell Check Packages for RebornOS"),
     'hardinfo': _("Easy application for extensive hardware analysis"),
@@ -264,7 +264,7 @@ TOOLTIPS = {
                "linux in technology and gaming, while PlayOnLinux\n"
                "is a very easy manager to setting up games to play\n"
                "through wine, instead of doing it manually."),
-    'graphic_drivers': _("Installs AMD or Nvidia proprietary graphics driver instead\n"
+ #   'graphic_drivers': _("Installs AMD or Nvidia proprietary graphics driver instead\n"
                          "of the open-source variant. Do NOT install this if you have a\n"
                          "Nvidia Optimus laptop"),
     'gtk-play': _("Popular games for Linux, ranging from complex games like 0 A.D,\n"
