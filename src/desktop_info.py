@@ -31,11 +31,12 @@
 
 # Disabled desktops(in DESKTOPS_DEV = DESKTOPS : "enlightenment", "windows", "apricity"
 # Enabled desktops (added ukui and lxde in 2021.06.15)
+# pantheon deleted
 
 DESKTOPS = ["base", "cinnamon", "deepin",
             "gnome", "kde", "mate", "openbox", "xfce"]
 
-DESKTOPS_DEV = DESKTOPS + ["budgie", "i3", "lxqt", "pantheon", "ukui", "lxde", "cutefish", "regolith"]
+DESKTOPS_DEV = DESKTOPS + ["budgie", "i3", "lxqt", "ukui", "lxde", "cutefish", "regolith"]
 
 DESKTOPS_A11Y = ["gnome", "mate", "apricity"]
 
@@ -56,7 +57,6 @@ NAMES = {
     'base': "Base",
     'cinnamon': "Cinnamon",
     'deepin': "Deepin",
-    'pantheon': "Pantheon",
     'windows':"Windows Interface",
     'gnome': "GNOME",
     'kde': "KDE",
@@ -74,7 +74,7 @@ NAMES = {
 }
 
 LIBS = {
-    'gtk': ["apricity", "cinnamon", "deepin", "pantheon", "gnome", "mate", "openbox", "xfce", "budgie", "enlightenment", "i3", "windows", "lxde", "regolith"],
+    'gtk': ["apricity", "cinnamon", "deepin", "gnome", "mate", "openbox", "xfce", "budgie", "enlightenment", "i3", "windows", "lxde", "regolith"],
     'qt': ["kde", "lxqt", "ukui", "cutefish"]
 }
 
@@ -86,7 +86,6 @@ EXCLUDED_FEATURES = {
     'apricity': ["lamp", "visual", "nautilus", "qt-play"],
     'cinnamon': ["lamp", "visual", "nemo", "qt-play"],
     'deepin': ["lamp", "visual", "qt-play"],
-    'pantheon': ["lamp", "visual", "qt-play", "nemo"],
     'windows': ["lamp", "visual", "qt-play", "nemo"],
     'gnome': ["lamp", "visual", "nautilus", "qt-play"],
     'kde': ["lamp", "visual", "gtk-play"],
@@ -108,7 +107,6 @@ SESSIONS = {
     'apricity' : 'gnome',
     'cinnamon': 'cinnamon',
     'deepin': 'deepin',
-    'pantheon': 'pantheon',
     'gnome': 'gnome',
     'kde': 'plasma',
     'mate': 'mate',
@@ -135,23 +133,22 @@ DESCRIPTIONS = {
     'base': _("This option will install RebornOS as command-line only system, "
               "without any type of graphical interface. After the installation you can "
               "customize RebornOS by installing packages with the command-line package manager."),
+              
    'apricity': _("Apricity OS is a now discontinued Linux distro in the Arch Linux family that simply  "
                         "offered a highly customized GNOME dekstop experience that combined beauty with "
                         "funcionality. With this option, the original Apricity look and feel is finally revivied! Experience "
                          "it now on RebornOS."),
+                         
     'cinnamon': _("Cinnamon is a Linux desktop which provides advanced, "
                   "innovative features and a traditional desktop user experience. "
                   "Cinnamon aims to make users feel at home by providing them with "
                   "an easy-to-use and comfortable desktop experience."),
+                  
     'deepin': _("IMPORTANT: Keep in mind that the Deepin desktop can often be unstable. "
                 "This does not depend on us, but on the developers of Deepin who "
                 "usually upload BETA versions of the desktop or some components in the "
                 "stable repositories of Arch Linux."),
-    'pantheon': _("Pantheon is the desktop environment that Elementary OS runs on. "
-                  "While true Pantheon is too unstable for RebornOS to offer, we "
-                  "have tried to offer the next best thing. By selecting Pantheon, "
-                  "you will get Elementary OS's good looks on a highly customized desktop "
-                  "running Cinnamon underneath."), 
+                
     'gnome': _("GNOME 3 is an easy and elegant way to use your "
                "computer. It features the Activities Overview which "
                "is an easy way to access all your basic tasks."),
@@ -216,6 +213,7 @@ DESCRIPTIONS = {
                   "(current) plans to add complex, edge-case, or convoluted settings and "
                   "features. The aim is to provide a basic set of sane defaults that just "
                   "work for most users."),
+                  
     'regolith': _("It is a minimalist Desktop Environment with a functional user interface, "
                   "which easily allows its modification and expansion, in many of its "
                   "elements. And all thanks to its excellent balance of mixing the features "
