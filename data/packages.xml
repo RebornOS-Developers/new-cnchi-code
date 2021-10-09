@@ -664,6 +664,7 @@
        </feature>
         <feature name="power">
             <pkgname>tlp</pkgname>
+            <pkgname>tlpui</pkgname>
             <pkgname>thermald</pkgname>
         </feature>
         <feature name="sshd">
