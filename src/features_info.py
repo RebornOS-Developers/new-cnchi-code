@@ -48,6 +48,7 @@ ICON_NAMES = {
     'rtl8821ce-dkms-git': 'network-wireless-hotspot',
     'megasync': 'mega',
 #    'firewall': 'network-server',
+    'onlyoffice': 'onlyoffice-desktopeditors',
     'fonts': 'preferences-desktop-font',
     'firewire': 'drive-harddisk-ieee1394',
     'games': 'applications-games',
@@ -84,7 +85,7 @@ ICON_NAMES = {
 ADVANCED = [ 'lamp', 'sshd', 'visual', 'firewire', 'broadcom', 'nautilus', 'nemo', 'email', 'wallpapers', 'hunspell' ]
 
 # These features are considered 'basic', and will be shown by default
-BASIC = ['opera', 'wine', 'wallpapers', 'vlc', 'vivaldi', 'visual', 'spotify', 'redshift', 'power', 'libreoffice', 'wps-office', 'freeoffice', 'qownnotes', 'lts', 'movie', 'maintenance', 'qt-play', 'hardinfo', 'gtk-play', 'graphics', 'games', 'fonts', 'firefox', 'firefox-developer-edition', 'google-chrome', 'email', 'dropbox', 'chromium', 'cups', 'bluetooth', 'aur', 'a11y'
+BASIC = ['opera', 'wine', 'wallpapers', 'vlc', 'vivaldi', 'visual', 'spotify', 'redshift', 'power', 'libreoffice', 'wps-office', 'onlyoffice', 'freeoffice', 'qownnotes', 'lts', 'movie', 'maintenance', 'qt-play', 'hardinfo', 'gtk-play', 'graphics', 'games', 'fonts', 'firefox', 'firefox-developer-edition', 'google-chrome', 'email', 'dropbox', 'chromium', 'cups', 'bluetooth', 'aur', 'a11y'
 'rtl8821ce-dkms-git', 'megasync']
 
 # See http://docs.python.org/2/library/gettext.html "22.1.3.4. Deferred translations"
@@ -123,6 +124,7 @@ TITLES = {
     'lts': _("Kernel (LTS version)"),
     'libreoffice': _("LibreOffice"),
     'wps-office': _("WPS Office"),
+    'onlyoffice': _("OnlyOffice Destopeditors"),
     'freeoffice': _("FreeOffice"),
     'power': _("Power Saving"),
 #    'plymouth': _("Boot Screen"),
@@ -169,6 +171,7 @@ DESCRIPTIONS = {
     'wps-office': _("Office Suit for Linux, made for those used to MS Office"),
     'libreoffice': _("Open source office suite. Supports editing MS Office files."),
     'freeoffice': _("FreeOffice is a full-featured Office suite."),
+    'onlyoffice': _("OnlyOffice Desktop Editors is a free open-source office suite."),
     'visual': _("Enable transparency, shadows, and other desktop effects."),
     'vlc': _("Ultimate Media Player For Linux"),
 #    'firewall': _("Control the incoming and outgoing network traffic."),
@@ -311,6 +314,11 @@ TOOLTIPS = {
                 "and Linux, that gives you six feature-rich applications\n"
                 "for all your document production and data processing\n"
                 "needs: Writer, Calc, Impress, Draw, Math and Base."),
+    'onlyoffice': _("OnlyOffice Desktop Editors is a free open-source office suite\n"
+                    "that combines text, spreadsheet, and presentation editors allowing\n"
+                    "to create, view, and edit documents stored on your Windows/Linux PC\n"
+                    "or Mac without an Internet connection. It is fully compatible with\n"
+                    "OOXML formats."),
     'power': _("Two programs are installed through this, namely TLP and Thermald.\n"
                "TLP will automatically adjust your laptop to optimize your battery\n"
                "performance in the background without interfering with your daily use at all,\n"
