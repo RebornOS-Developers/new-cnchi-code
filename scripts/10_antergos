@@ -18,7 +18,6 @@ set -e
 # along with GRUB.  If not, see <http://www.gnu.org/licenses/>.
 
 # Disable 10_linux
-
 if [ -f /etc/grub.d/10_linux ]; then
     chmod -x /etc/grub.d/10_linux
 fi
@@ -105,11 +104,11 @@ linux_entry ()
   if [ x$type != xsimple ] && [ "$is_arch" != True ]; then
       case $type in
 	  recovery)
-	      title="$(gettext_printf "%s, with Linux %s (recovery mode)" "${os}" "${version}")" ;;
+	      title="$(gettext_printf "%s, with kernel %s (recovery mode)" "${os}" "${version}")" ;;
 	  fallback)
-          title="$(gettext_printf "RebornOS, with Linux %s (fallback initramfs)" "${os}" "${version}")" ;;
+          title="$(gettext_printf "%s, with kernel %s (fallback initramfs)" "${os}" "${version}")" ;;
 	  *)
-	      title="$(gettext_printf "RebornOS, with %s Kernel" "${os}" "${version}")" ;;
+	      title="$(gettext_printf "%s, with kernel %s" "${os}" "${version}")" ;;
       esac
       if [ x"$title" = x"$GRUB_ACTUAL_DEFAULT" ] || [ x"Previous Linux versions>$title" = x"$GRUB_ACTUAL_DEFAULT" ]; then
 	  replacement_title="$(echo "Advanced options for RebornOS" | sed 's,>,>>,g')>$(echo "$title" | sed 's,>,>>,g')"
@@ -124,17 +123,17 @@ linux_entry ()
         	if [ "$version" == "linux" ]; then
                 title="$(gettext_printf "%s" "${os}")"
           	elif [ "$version" == "linux-lts" ]; then
-                title="$(gettext_printf "RebornOS LTS Kernel" "${os}")"
+                title="$(gettext_printf "%s with LTS kernel" "${os}")"
           	else
-                title="$(gettext_printf "RebornOS, with %s Kernel" "${os}" "${version}")"
+                title="$(gettext_printf "%s, with kernel %s" "${os}" "${version}")"
           	fi
         else
 			if [ "$version" == "linux" ]; then
-                title="$(gettext_printf "RebornOS - Fallback" "${os}")"
+                title="$(gettext_printf "%s (fallback initramfs)" "${os}")"
           	elif [ "$version" == "linux-lts" ]; then
-                title="$(gettext_printf "RebornOS LTS Kernel - Fallback" "${os}")"
+                title="$(gettext_printf "%s with LTS kernel (fallback initramfs)" "${os}")"
           	else
-                title="$(gettext_printf "RebornOS, with %s Kernel - Fallback" "${os}" "${version}")"
+                title="$(gettext_printf "%s, with kernel %s (fallback initramfs)" "${os}" "${version}")"
           	fi
         fi
 
