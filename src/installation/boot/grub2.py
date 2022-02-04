@@ -233,10 +233,10 @@ class Grub2(object):
             logging.error(message)
 
     def prepare_grub_d(self):
-        """ Copies 10_antergos script into /etc/grub.d/ """
+        """ Copies 10_rebornos script into /etc/grub.d/ """
         grub_d_dir = os.path.join(self.dest_dir, "etc/grub.d")
         script_dir = os.path.join(self.settings.get("cnchi"), "scripts")
-        script = "10_antergos"
+        script = "10_rebornos"
 
         os.makedirs(grub_d_dir, mode=0o755, exist_ok=True)
 
